@@ -3,7 +3,7 @@ import React from "react";
 function Login() {
 
   return (
-    <div style={{display: "flex", justifyContent: "flex-end", backgroundColor:"lightblue"}}>
+    <div style={{display: "flex", justifyContent: "flex-end"}}>
       <button>Log In</button>
       <br></br>
       <br></br>

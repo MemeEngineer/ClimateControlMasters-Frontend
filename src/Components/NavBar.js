@@ -11,7 +11,8 @@ const linkStyles = {
   color: "white",
   textAlign: "center",
   inlineSize: "150px",
-  justifyContent: "center"
+  justifyContent: "center",
+  marginTop: "10px"
 };
 
 function NavBar() {

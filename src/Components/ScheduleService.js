@@ -6,15 +6,16 @@ function ScheduleService() {
 
   return (
     <div>
-      <form style={{ display: "flex" }} >
-            <div>
+      <div>
+      <form style={{ display: "flex",flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
+     
               <div>
                 <label>First Name</label>
                 <input
                   type="text"
                   name="firstname"
-                  placeholder="firstname"
-                  
+                  placeholder="First name"
+                  style={{ display: "flex", justifyContent: "center"}}
                 />
               </div>
               <div>
@@ -22,8 +23,8 @@ function ScheduleService() {
                 <input
                   type="text"
                   name="lastname"
-                  placeholder="lastname"
-                  
+                  placeholder="Last name"
+                  style={{ display: "flex", justifyContent: "center"}}
                 />
               </div>
 
@@ -32,8 +33,8 @@ function ScheduleService() {
                 <input
                   type="text"
                   name="email"
-                  placeholder="email"
-                  
+                  placeholder="Email"
+                  style={{ display: "flex", justifyContent: "center"}}
                 />
               </div>
 
@@ -43,7 +44,7 @@ function ScheduleService() {
                   type="text"
                   name="telephone"
                   placeholder="Telephone"
-                  
+                  style={{ display: "flex", justifyContent: "center"}}
                 />
               </div>
               <div>
@@ -51,8 +52,8 @@ function ScheduleService() {
                 <input
                   type="text"
                   name="subject"
-                  placeholder="subject"
-                  
+                  placeholder="Subject"
+                  style={{ display: "flex", justifyContent: "center"}}
                 />
               </div>
               <div>
@@ -67,19 +68,22 @@ function ScheduleService() {
                 <input type="checkbox" name="other" placeholder="other" value="other"/> Other
               </div>
               <div>
-                <label>Message </label>
+                <label style={{display: "flex", alignItems: "center", justifyContent: "center"}}>Message </label>
                 <input
                   type="text"
                   name="message"
                   placeholder="Message"
-                  style= {{width:"500px", height: "300px"}}
+                  style= {{width:"300px", height: "300px"}}
+                  
                 />
+                
               </div>
-            </div>
+              
           </form>
-          <button className="button" type="submit">
+          <button className="button" type="submit" style= {{justifyContent: "center"}}>
               Send Message
             </button>
+            </div>
     </div>
   );
 }
